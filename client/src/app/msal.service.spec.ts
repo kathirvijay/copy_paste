@@ -1,6 +1,5 @@
 import { TestBed } from '@angular/core/testing';
-
-import { MsalService } from './msal.service';
+import { MsalService } from '@azure/msal-angular';
 
 describe('MsalService', () => {
   let service: MsalService;
