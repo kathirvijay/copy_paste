@@ -64,5 +64,6 @@ jobs:
         with:
           app-name: 'platep'
           slot-name: 'Production'
-          package: .
+          package: ./client # Deploy the client directory
+
           
