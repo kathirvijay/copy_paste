@@ -1,0 +1,44 @@
+
+    <div class="container">
+        <div class="login__info">
+            <div class="login__info-btnarea">
+                <button class="login__info-btn" (click)="navigateToLogin()"  >login</button>
+                <button class="login__info-btn" (click)="navigateToHome()"  >home</button>
+            </div>
+
+        </div>
+        <div class="login__area">
+            <div class="login">
+                <span class="heading-2">Sign in to CPY</span>
+                <span class="fnt_sml">Enter your account details</span>
+                <div class="label-container">
+                    <input type="text" class="login__input" placeholder="Email address" id="email">
+                    <label for="email" class="label__style">Email</label>
+                </div>
+                <div class="label-container">
+                    <input type="password" class="login__input" placeholder="Password" id="password">
+                    <label for="password" class="label__style">Password</label>
+                </div>
+
+                <button class="sso-login-btn transform__upper">Sign in</button>
+            </div>
+            
+            <div class="sign__up">
+                <a href="#" class="fnt_sml link__style">Forget Password ?</a>
+                <a href="#" class="fnt_sml link__style">Get Started</a>
+            </div>
+            <hr class="custom__line">
+            <div class="login__sso">
+                <button class="sso-login-btn" (click)="signInWithMicrosoft()">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="Microsoft logo" width="20" height="20">
+                    Sign in with Microsoft
+                  </button>
+                  <button class="sso-login-btn" (click)="signInWithGoogle()">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/Google_%22G%22_Logo.svg" alt="Google logo" width="20" height="20">
+                    Sign in with Google
+                  </button>
+            </div>
+
+        </div>
+
+    </div>

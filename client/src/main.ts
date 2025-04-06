@@ -1,6 +1,13 @@
 import { bootstrapApplication } from '@angular/platform-browser';
-import { appConfig } from './app/app.config';
+import { appConfig, msalInstance } from './app/auth-config';
 import { AppComponent } from './app/app.component';
 
-bootstrapApplication(AppComponent, appConfig)
-  .catch((err) => console.error(err));
+
+
+async function initializeMsal() {
+  await msalInstance.initialize();
+}
+initializeMsal().then(() => {
+  bootstrapApplication(AppComponent, appConfig)
+    .catch((err) => console.error('err', err));
+});

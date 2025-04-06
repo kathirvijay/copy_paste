@@ -1,0 +1,133 @@
+
+
+.login__info {
+    width: 70%;
+    height: 100%;
+    background-image: linear-gradient(to left , rgba(255, 0, 132, 0.175), rgba(51, 0, 27, 0.86)), url(../../assets/images/pic-1.jpg);
+    background-position: center;
+    background-size: cover;
+    &-btnarea{
+        padding-top: 5rem;
+        padding-left: 5rem;
+        display: flex;
+        gap: 2rem;
+    }
+
+    &-btn {
+        padding: 1rem 3rem;
+        border: none;
+        border-radius: 5px;
+        background-color: var(--col-tersiary);
+        color: var(--col-white);
+    }
+}
+
+.login__area {
+    width: 30%;
+    height: 100%;
+    background-image: linear-gradient( to bottom,  rgba(51,0,27,1) ,rgba(255,0,132,1), rgba(51,0,27,1)  );
+    display: grid;
+    place-content: center;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    color: var(--col-white);
+    gap: 1.5rem;
+}
+
+.label-container {
+    position: relative;
+    
+}
+
+
+
+.login__input {
+    display: block;
+    width: 100%;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    height: 4rem;
+    border-bottom: 2px solid var(--col-white);
+    color: var(--col-white);
+    padding: 2rem 1rem;
+}
+
+.label__style {
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.login__input:focus + .label__style {
+    opacity: 1;
+    top: -12px;
+    left: 0;
+}
+
+.login__input::placeholder {
+    color: var(--col-white);
+    font-family: "Parkinsans", serif;
+  }
+
+  .login__input:focus {
+    caret-color: var(--col-white);
+  }
+
+  .login__input:focus::placeholder {
+    color: transparent;
+    transition: all .3s;
+  }
+
+.sign__up {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    color: var(--col-white);
+}
+
+.link__style {
+    text-decoration: none;
+    color: var(--col-white);
+}
+
+
+.custom__line {
+    height: 1px;
+    background-color: var(--col-white);
+    filter: blur(1px);
+    margin: 1rem 0;
+}
+
+.login__sso {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.sso-login-btn {
+    background-color: var(--col-tersiary);
+    color: #FFFFFF;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.8rem;
+    cursor: pointer;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .sso-login-btn:hover {
+    background-color: #1A1A1A;
+  }
+
+  .sso-login-btn img {
+    margin-right: 1rem;
+  }
